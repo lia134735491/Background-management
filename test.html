@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #a {
+        height: 200px;
+        border: 1px solid red;
+
+    }
+    #b {
+        display: inline-block;
+        width: 95%;
+        height: 100%;
+        border: 1px solid blue;
+    }
+    #c {
+        display: inline-block;
+        width: 100px;
+        height: 100%;
+        border: 1px solid yellow;
+    }
+</style>
+<body>
+    <div id="a">
+        <div id="b"></div>
+        <div id="c"></div>
+    </div>
+    <script>
+        async function aa() {
+            await 123
+        }
+        console.log(aa().then(v=>{
+            console.log(v)
+        }))
+    </script>
+</body>
+</html>

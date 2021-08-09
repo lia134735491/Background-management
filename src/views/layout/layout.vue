@@ -114,9 +114,6 @@ export default {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  > div {
-    flex-shrink: 0;
-  }
   .avatar-wrap {
     display: flex;
     align-items: center;

@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "echarts": "^5.1.2",
     "element-ui": "^2.15.3",
     "vue": "^2.6.11",
     "vue-axios": "^3.2.5",
@@ -58,7 +59,13 @@
       "arrow-spacing": "off",
       "keyword-spacing": "off",
       "quotes": "off",
-      "no-useless-return": "off"
+      "no-useless-return": "off",
+      "no-multiple-empty-lines": "off",
+      "eol-last": "off",
+      "quote-props": "off",
+      "semi": "off",
+      "no-undef": "off",
+      "padded-blocks": "off"
     }
   },
   "browserslist": [

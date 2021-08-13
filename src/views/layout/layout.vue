@@ -43,7 +43,7 @@
 
 <script>
 import appAside from './components/aside'
-import { getUserInfo } from '@/api/user'
+import { getUserProfile } from '@/api/user'
 export default {
   data () {
     return {
@@ -86,7 +86,7 @@ export default {
     },
 
     async loadUserInfo() {
-      let userInfo = await getUserInfo()
+      let userInfo = await getUserProfile()
       this.user = userInfo.data.data
     }
   }

@@ -6,6 +6,9 @@ import home from '@/views/home/home'
 import article from '@/views/article/article'
 import image from '@/views/image/image'
 import fans from '@/views/fans/fans'
+import publish from '@/views/publish/publish'
+import comment from '@/views/comment/comment'
+import setting from '@/views/setting/setting'
 // 解决重复点击同一个导航出现报错的问题
 const originalPush = VueRouter.prototype.push
 VueRouter.prototype.push = function push(location) {
@@ -49,6 +52,27 @@ const routes = [
         component: fans,
         meta:{
           breadcrumb: '素材管理'
+        }
+      },
+      {
+        path: '/publish',
+        component: publish,
+        meta:{
+          breadcrumb: '发布文章'
+        }
+      },
+      {
+        path: '/comment',
+        component: comment,
+        meta:{
+          breadcrumb: '评论管理'
+        }
+      },
+      {
+        path: '/settings',
+        component: setting,
+        meta:{
+          breadcrumb: '个人设置'
         }
       }
     ]
